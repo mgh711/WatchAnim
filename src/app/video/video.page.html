@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>WatchAnim</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card *ngFor="let video of videos">
+    <ion-card-header>
+      {{video.nom}} - {{video.episode}}
+    </ion-card-header>
+    <ion-card-content>
+     {{video.description}}
+    <br>
+      <br>
+      <ul>
+        <li *ngFor="let style of video.styles">{{style}}</li>
+      </ul>
+      <br>
+      <ion-button [routerLink]="['/video-detail', video.numero]">voir la vidéo</ion-button>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

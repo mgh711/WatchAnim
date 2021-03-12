@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">WatchAnim</string>
+    <string name="title_activity_main">WatchAnim</string>
+    <string name="package_name">local.watchanim</string>
+    <string name="custom_url_scheme">local.watchanim</string>
+</resources>

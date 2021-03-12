@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>WatchAnim</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content *ngIf="video">
+
+  {{video.nom}}
+  <br>
+  {{video.episode}}
+  
+  
+  <br>
+  {{video.description}}
+  <iframe width="560" height="315" [src]="videoLink" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<br>
+<br>
+  <ion-button [routerLink]="['/']">Retour</ion-button>
+
+
+</ion-content>
